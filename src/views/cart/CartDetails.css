@@ -1,0 +1,57 @@
+.cart-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .cart-page h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 20px;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #e9ecef;
+  }
+  
+  .table-dark {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .summary-box {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .summary-box h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .btn-clear {
+    padding: 8px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: background 0.3s;
+  }
+  
+  .btn-clear:hover {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .empty-cart h4 {
+    font-size: 1.8rem;
+    color: #6c757d;
+  }
+  
+  .empty-cart p {
+    font-size: 1rem;
+    color: #868e96;
+  }
+  
