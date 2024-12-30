@@ -2,12 +2,18 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { clearCart } from "../../store/cartSlice";
 import "./CartDetails.css";
+import { useNavigate } from "react-router-dom";
 
 const CartDetails = () => {
   const cart = useSelector((state) => state.cart);
   const price = useSelector((state) => state.cart.totalPrice);
   const quantity = useSelector((state) => state.cart.totalQuantity);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleGoToHomepage = () => {
+    navigate("/");
+  };
 
   return (
     <div className="cart-page container-fluid py-5">
@@ -61,6 +67,12 @@ const CartDetails = () => {
               <p>Add items to see them here.</p>
             </div>
           )}
+          {/* Add the button to go back to the homepage */}
+          <div className="text-center mt-4">
+            <button className="btn btn-home" onClick={handleGoToHomepage}>
+              Go To Homepage
+            </button>
+          </div>
         </div>
       </div>
     </div>
