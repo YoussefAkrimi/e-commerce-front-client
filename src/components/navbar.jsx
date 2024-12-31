@@ -58,13 +58,13 @@ const Navbar = () => {
                       category.subCategories.length > 0 && (
                         <div className="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
                           {category.subCategories.map((subCategory) => (
-                            <a
-                              href="#"
-                              className="dropdown-item"
-                              key={subCategory._id}
-                            >
-                              {subCategory.name}
-                            </a>
+                            <Link
+                            to={`/subcategory/${subCategory._id}/products`}
+                            className="dropdown-item"
+                            key={subCategory._id}
+                          >
+                            {subCategory.name}
+                          </Link>
                           ))}
                         </div>
                       )}
