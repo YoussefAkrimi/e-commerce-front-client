@@ -14,7 +14,9 @@ const CartDetails = () => {
   const handleGoToHomepage = () => {
     navigate("/");
   };
-
+  const handleGoToPayment = () => {
+    navigate("/payment");  // Assuming the payment page route is '/payment'
+  };
   return (
     <div className="cart-page container-fluid py-5">
       <div className="row justify-content-center">
@@ -71,6 +73,9 @@ const CartDetails = () => {
           <div className="text-center mt-4">
             <button className="btn btn-home" onClick={handleGoToHomepage}>
               Go To Homepage
+            </button>
+            <button className="btn btn-primary ml-2" onClick={handleGoToPayment}>
+              Proceed to Payment
             </button>
           </div>
         </div>

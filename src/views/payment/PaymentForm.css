@@ -1,0 +1,142 @@
+/* Base container styling for the payment form */
+.payment-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the form vertically */
+    min-height: 100vh;
+    background: #f4f7fc; /* Light grayish blue background */
+    padding: 20px;
+    flex-direction: column; /* Stack the title and form */
+  }
+  
+  /* Form container with a clean, minimalist design */
+  .payment-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px; /* More rounded corners for a softer feel */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Slightly larger form */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Give space between title and form */
+  }
+  
+/* Title of the form with modern and sleek typography */
+.payment-form-title {
+    text-align: center;
+    font-size: 2.5rem; /* Slightly smaller font size for a more balanced look */
+    font-weight: 700; /* Bold but not too heavy */
+    color: #333; /* Soft black color for readability */
+    margin-top: 0;
+    margin-bottom: 30px; /* Enough space below the title */
+    letter-spacing: 1px; /* Subtle letter spacing for a refined look */
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    position: relative;
+    padding-bottom: 8px; /* Space to make room for the underline */
+  }
+  
+  /* Underline effect with a smooth transition */
+  .payment-form-title::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #007bff; /* Blue color for the underline */
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease; /* Smooth transition for underline */
+  }
+  
+  /* Hover effect for interactive feel */
+  .payment-form-title:hover::after {
+    width: 50%; /* Underline expands on hover */
+    background-color: #0056b3; /* Darker blue when hovered */
+  }
+  
+  /* Subtle shadow for a soft 3D effect */
+  .payment-form-title {
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* Soft shadow for a light 3D effect */
+  }
+  
+  
+  /* Input field styling */
+  .payment-form-input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* More rounded corners */
+    font-size: 1rem;
+    color: #495057;
+    background: #fafbfc;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  /* Focused input field with border color change */
+  .payment-form-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+  }
+  
+  /* Container for the CardElement */
+  .card-element-container {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  
+  /* Styling for the CardElement */
+  .card-element {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fafbfc;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  /* Focused CardElement styling */
+  .card-element:focus {
+    border-color: #007bff;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #dc3545;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Payment button with modern color scheme */
+  .payment-button {
+    width: 100%;
+    padding: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .payment-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .payment-button:hover:not(:disabled) {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight hover scale effect */
+  }
+  
+  .payment-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Blue glow effect */
+  }
+  
